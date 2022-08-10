@@ -1,0 +1,36 @@
+<div *ngFor="let post of posts | async">
+    <div class="bg-white mt-7 shadow-sm max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto rounded-xl">
+        <div class="flex space-x-5 p-5">
+            <img src="{{ post.userImage }}" alt="" class="w-10 h-10 rounded-full cursor-pointer" />
+            <div class="cursor-pointer">
+                <p class="font-semibold text-gray-700">{{ post.username }}</p>
+                <p class="text-xs text-gray-500">{{ post.email }}</p>
+            </div>
+        </div>
+        <p class="mt-1 ml-5 mb-3 text-gray-700">
+            {{ post.description }}
+        </p>
+        <img src="{{ post.postImage }}" alt="" class="w-full" />
+        <div class="flex space-x-2 p-2">
+            <button class="flex items-center p-3 font-semibold text-black space-x-1 hover:bg-gray-200 rounded-lg">
+        <img
+          alt="thumbsupIcon"
+          src="../../../assets/images/hand-thumbs-up-fill.svg"
+          class="w-5"
+        />
+        <p>Like</p>
+      </button>
+            <button class="sapce-x-2 flex items-center p-3 font-semibold text-black space-x-1 hover:bg-gray-200 rounded-lg">
+        <img src="../../../assets/images/chat-fill.svg" class="w-5" alt="" />
+        <p>Comment</p>
+      </button>
+
+            <button class="flex items-center p-3 font-semibold text-black space-x-1 hover:bg-gray-200 rounded-lg">
+        <img src="../../../assets/images/send-fill.svg" class="w-5" alt="" />
+        <p>Share</p>
+      </button>
+        </div>
+    </div>
+
+    <div class="bg-white shadow-sm max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto mb-5"></div>
+</div>

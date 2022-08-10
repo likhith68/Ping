@@ -1,0 +1,42 @@
+<!-- <nav></nav> -->
+<div class="bg-white p-5 shadow-md max-w-sm md:max-w-md lg:max-w-lg xl:max-w-3xl mx-auto my-8 lg:my-20 rounded-lg">
+    <!-- Logo -->
+    <div class="flex items-center justify-center space-x-2">
+        <img src="../../../assets/images/logo3.svg" class="w-20" alt="" />
+        <p class="font-bold text-xl">Register</p>
+    </div>
+    <div class="grid">
+        <div class="flex items-center my-5">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="bg-gray-50 rounded-lg p-2 ml-3 outline-none placeholder:text-gray-300 flex-1" placeholder="Username" [(ngModel)]="this.registerModel.username" />
+        </div>
+        <div class="flex items-center my-5">
+            <label for="email">Email</label>
+            <input type="text" id="email" class="bg-gray-50 rounded-lg p-2 ml-3 outline-none flex-1 placeholder:text-gray-300" placeholder="abc@gmail.com" [(ngModel)]="this.registerModel.email" />
+        </div>
+        <div class="flex items-center my-5">
+            <label for="pno">Phone Number</label>
+            <input type="text" id="pno" class="bg-gray-50 rounded-lg flex-1 p-2 px-1 ml-1 md:ml-3 outline-none placeholder:text-gray-300" placeholder="91-XXXXXXXXXX" [(ngModel)]="this.registerModel.phoneNumber" />
+        </div>
+        <div class="flex items-center space-x-2 my-5">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" class="bg-gray-50 rounded-lg p-2 outline-none placeholder:text-gray-300 flex-1" placeholder="Must include Special characters Capitals and minimum length is 8" [(ngModel)]="this.registerModel.password" />
+        </div>
+        <div class="flex items-center space-x-2 my-5">
+            <label for="cpass">Confirm Password</label>
+            <input type="password" id="cpass" class="bg-gray-50 rounded-lg p-2 outline-none placeholder:text-gray-300 flex-1" placeholder="Re-enter Password" />
+        </div>
+        <div class="flex items-center space-x-2">
+            <input type="checkbox" class="w-4 h-4" />
+            <span class="">I Agree to the terms and Conditions</span>
+        </div>
+        <button (click)="OnSubmit()" class="p-2 rounded-md bg-black text-white font-bold my-5 hover:bg-gray-200 hover:text-black">
+      Register
+    </button>
+        <div class="flex items-center space-x-2 p-2">
+            <p>Already a User?</p>
+            <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Click here To Login</a
+      >
+    </div>
+  </div>
+</div>

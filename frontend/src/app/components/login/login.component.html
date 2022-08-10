@@ -1,0 +1,30 @@
+<div class="bg-white p-5 shadow-md max-w-xs md:max-w-sm lg:max-w-lg mx-auto my-20 rounded-lg">
+    <div class="flex items-center justify-center space-x-2">
+        <img src="../../../assets/images/logo3.svg" class="w-20" alt="" />
+        <p class="font-bold text-xl">Login</p>
+    </div>
+    <div class="grid">
+        <div class="flex items-center my-5">
+            <label for="username" class="">Username</label>
+            <input type="text" id="username" class="bg-gray-50 rounded-lg p-2 ml-1 outline-none flex-1 placeholder:text-gray-300" placeholder="Enter Username" [(ngModel)]="this.loginModel.username" />
+        </div>
+
+        <div class="flex items-center space-x-2 my-5">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" class="bg-gray-50 rounded-lg p-2 outline-none flex-1 placeholder:text-gray-300" placeholder="Enter password" [(ngModel)]="this.loginModel.password" />
+        </div>
+        <div class="flex space-x-2 items-center ml-3 my-2">
+            <input type="checkbox" name="" id="staySignedIn" class="w-4 h-4" />
+            <span class="text-gray-600 text-md">Stay SignedIn</span>
+        </div>
+        <button (click)="OnSubmit()" class="p-2 rounded-md bg-black text-white font-bold my-5 hover:bg-gray-200 hover:text-black">
+      Login
+    </button>
+
+        <div class="flex items-center space-x-2 p-2">
+            <p>New User?</p>
+            <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Click here To Register</a
+      >
+    </div>
+  </div>
+</div>
