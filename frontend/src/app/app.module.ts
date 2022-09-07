@@ -11,6 +11,14 @@ import { FeedComponent } from './components/feed/feed.component';
 import { AddpostComponent } from './components/addpost/addpost.component';
 import { Ng2Webstorage } from 'ngx-webstorage';
 import { HttpClientInterceptor } from './components/http-client-interceptor';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { EditprofileComponent } from './components/editprofile/editprofile.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PostPageComponent } from './components/post-page/post-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FollowProfilePageComponent } from './components/follow-profile-page/follow-profile-page.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,12 +27,19 @@ import { HttpClientInterceptor } from './components/http-client-interceptor';
     NavbarComponent,
     FeedComponent,
     AddpostComponent,
+    UserDetailsComponent,
+    EditprofileComponent,
+    PostPageComponent,
+    FollowProfilePageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
     Ng2Webstorage.forRoot(),
   ],
   providers: [

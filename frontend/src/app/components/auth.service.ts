@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Stringifier } from 'postcss';
 import { map, Observable } from 'rxjs';
 import { LoginPayload } from './LoginPayload';
 import { RegisterPayload } from './RegisterPayload';

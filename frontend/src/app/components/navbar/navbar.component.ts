@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddpostComponent } from '../addpost/addpost.component';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -6,7 +8,7 @@ import { AuthService } from '../auth.service';
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent implements OnInit {
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private dialog: MatDialog) {}
 
   ngOnInit(): void {}
 
@@ -16,5 +18,9 @@ export class NavbarComponent implements OnInit {
 
   logout() {
     this.authService.logout();
+  }
+
+  openAddPost() {
+    this.dialog.open(AddpostComponent);
   }
 }

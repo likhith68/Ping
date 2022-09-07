@@ -1,0 +1,33 @@
+<div class="mt-5 bg-white max-w-2xl mx-auto rounded-lg shadow-sm">
+    <div class="grid max-w-lg mx-auto">
+        <h1 class="pt-7 pb-4">Edit Profile</h1>
+        <hr class="max-w-screen-6xl" />
+        <div>
+            <label for="id">User Id</label>
+            <input value="{{ users.id }}" [(ngModel)]="this.userModel.id" placeholder="{{ users.id }}" class="bg-gray-50 rounded-lg p-2 outline-none flex-1 placeholder:text-gray-300" />
+        </div>
+        <div>
+            <label for="">Username</label>
+            <input type="text" [(ngModel)]="this.userModel.username" placeholder="{{ users.username }}" class="bg-gray-50 rounded-lg p-2 outline-none flex-1 placeholder:text-gray-300" />
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="text" [(ngModel)]="this.userModel.email" placeholder="{{ users.email }}" class="bg-gray-50 rounded-lg p-2 outline-none flex-1 placeholder:text-gray-300" />
+        </div>
+        <div>
+            <label for="">Phonenumber</label>
+            <input type="text" [(ngModel)]="this.userModel.phoneNumber" placeholder="{{ users.phoneNumber }}" class="bg-gray-50 rounded-lg p-2 outline-none flex-1 placeholder:text-gray-300" />
+        </div>
+        <div>
+            <label for="">UserImage</label>
+            <input type="text" [(ngModel)]="this.userModel.userImage" placeholder="{{ users.userImage }}" class="bg-gray-50 rounded-lg p-2 outline-none flex-1 placeholder:text-gray-300" />
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="text" [(ngModel)]="this.userModel.password" placeholder="Change Password" class="bg-gray-50 rounded-lg p-2 outline-none flex-1 placeholder:text-gray-300" />
+        </div>
+        <button (click)="OnSubmit()" class="p-2 rounded-md bg-black text-white font-bold my-5 hover:bg-gray-200 hover:text-black">
+      Edit
+    </button>
+    </div>
+</div>

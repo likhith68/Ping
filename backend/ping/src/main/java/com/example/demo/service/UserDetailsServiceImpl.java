@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import java.util.Collection;
 import java.util.Collections;
-
+import java.util.HashSet;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
@@ -21,7 +21,6 @@ import com.example.demo.repository.UserDao;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
-	
 	@Autowired
 	private UserDao userRepository;
 	
@@ -36,5 +35,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	private Collection<? extends GrantedAuthority> getAuthorities(String role){
 		return Collections.singletonList(new SimpleGrantedAuthority(role));
 	}
+
 }
+
 
